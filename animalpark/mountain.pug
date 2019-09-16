@@ -4,12 +4,13 @@ html(lang="zh")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title 奇想動物園-觀賞園區-山區
+        title 奇想動物園-觀賞園區
         link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
         link(rel="stylesheet", href="style.css")
     body
-        include ../background.pug
-        include ../Logo.pug
+        div(class="background2")
+            include ../logo2.pug
+            include ../nav2.pug
 
 
 
@@ -19,6 +20,9 @@ html(lang="zh")
 
 
 
+
+
+        include ../contact.pug
         include ../footer.pug
 
 
