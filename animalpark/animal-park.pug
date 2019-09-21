@@ -6,18 +6,34 @@ html(lang="zh")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title 奇想動物園-觀賞園區
         link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+        link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
         link(rel="stylesheet", href="style.css")
     body
         div(class="background")
             include ../logo.pug
             include ../nav.pug
             include ../door.pug
-                div(id="polar")
-                div(id="savana")
-                div(id="rainforest")
-                div(id="mountain")
-                div(id="rock")
-                div(id="ocean")
+                div(id="area-backgroud")
+                    a(href="polar.html")
+                        div(id="polar" class="area")
+                            h2 極地
+                            img(src="", alt="極地")
+                    a(href="savana.html")
+                        div(id="savana" class="area")
+                            h2 草原
+                            img(src="", alt="草原")
+                    a(href="forest.html")
+                        div(id="forest" class="area")
+                            h2 森林
+                            img(src="", alt="森林")
+                    a(href="mountain.html")
+                        div(id="mountain" class="area")
+                            h2 山區
+                            img(src="", alt="山區")
+                    a(href="ocean.html")
+                        div(id="ocean" class="area")
+                            h2 海洋
+                            img(src="", alt="海洋")
 
 
 
@@ -37,3 +53,6 @@ html(lang="zh")
         script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
         script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+        script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+        script(src="js/java.js")
+
