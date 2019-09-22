@@ -13,33 +13,9 @@ html(lang="zh")
         div(class="background")
             //-大門 地圖 熱氣球 告示牌
             //-include Logo.pug 門扉
-            div(class="Logo")
-                a(href="index.html") 奇想動物園
-                    img(src="", alt="首頁 奇想動物園")
+            include logo.pug
             //-include nav.pug 熱氣球
-            nav(class="nav")
-                img(id="hamburger", src="image/sunflower.png", alt="向日葵導覽列")
-                a(href="")
-                    a(href="")
-                    a(href="")
-                    a(href="")
-                    a(href="")
-                    a(href="")
-                    a(href="")
-                a(href="")
-                    a(href="")
-                    a(href="")
-                    a(href="")
-                a(href="")
-                    a(href="")
-                    a(href="")
-                    a(href="")
-                a(href="")
-                    a(href="")
-                    a(href="")
-                a(href="")
-                    a(href="")
-                    a(href="")
+            include nav.pug
             //-門框
             div(id="door")
                 //-觀賞園區
@@ -55,8 +31,9 @@ html(lang="zh")
                 div(id="link-event")
                 //-告示牌-關於我們-聯絡店家-店家位置-FB-LINE
                 div(id="contact")
-                //-地面-版權聲明
-                footer(class="footer")
+            include leading.pug
+            //-地面-版權聲明
+            footer(class="footer")
 
 
 

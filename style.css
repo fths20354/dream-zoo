@@ -13,8 +13,73 @@ html, body {
   z-index: -1;
 }
 
-.nav {
+.logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgba(170, 78, 3, 0.644);
+}
+
+.logo a {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.logo a div {
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+.nav-bg {
+  position: fixed;
+  width: 20vw;
   z-index: 1;
+  right: 0;
+  top: 10vh;
+}
+
+.nav-bg .nav {
+  width: 200vw;
+}
+
+.nav-bg .nav img {
+  width: 20vw;
+  height: 30vh;
+}
+
+.nav-bg .nav-list {
+  width: 20vw;
+  text-align: center;
+}
+
+.nav-bg .nav-list hr {
+  margin: 0;
+}
+
+.leading {
+  position: fixed;
+  height: 350px;
+  width: 210px;
+  bottom: 0;
+  left: 0;
+}
+
+.leading .leading-list {
+  text-align: center;
+}
+
+.leading .leading-img img {
+  width: 210px;
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #link-event {
