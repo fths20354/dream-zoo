@@ -53,6 +53,7 @@
 }
 
 .nav-bg .nav-list {
+  display: none;
   width: 10vw;
   text-align: center;
 }
@@ -61,8 +62,43 @@
   margin: 0;
 }
 
+.nav-bg .open {
+  display: block;
+}
+
+.nav-bg .animal-park-list {
+  display: none;
+}
+
+.nav-bg .open {
+  display: block;
+}
+
+.nav-bg .active-park-list {
+  display: none;
+}
+
+.nav-bg .open {
+  display: block;
+}
+
+.nav-bg .coffee-list {
+  display: none;
+}
+
+.nav-bg .open {
+  display: block;
+}
+
+.nav-bg .event-list {
+  display: none;
+}
+
+.nav-bg .open {
+  display: block;
+}
+
 .leading {
-  height: 350px;
   width: 210px;
   position: fixed;
   bottom: 0;
@@ -70,15 +106,20 @@
   z-index: 1;
 }
 
-.leading .leading-list {
-  text-align: center;
-}
-
 .leading .leading-img img {
   height: 350px;
   width: 210px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.leading .leading-list {
+  display: none;
+  text-align: center;
+}
+
+.leading .open {
+  display: block;
 }
 
 .copyright {
@@ -122,5 +163,9 @@
 
 .footer {
   z-index: -1;
+}
+
+.open {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

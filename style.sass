@@ -42,27 +42,54 @@
             width: 10vw
             height: 7.5vw
     .nav-list
+        display: none
         width: 10vw
         text-align: center
         hr
             margin: 0
+    //-配合JS的打開開關
+    .open
+        display: block
+    .animal-park-list
+        display: none
+    //-配合JS的打開開關
+    .open
+        display: block
+    .active-park-list
+        display: none
+    //-配合JS的打開開關
+    .open
+        display: block
+    .coffee-list
+        display: none
+    //-配合JS的打開開關
+    .open
+        display: block
+    .event-list
+        display: none
+    //-配合JS的打開開關
+    .open
+        display: block
+    
+
 //-里程告示牌
 .leading
-    height: 350px
     width: 210px
     position: fixed
     bottom: 0
     left: 0
     z-index: 1
-    .leading-list
-        text-align: center
     .leading-img
         img
             height: 350px
             width: 210px
             object-fit: contain
-
-
+    .leading-list
+        display: none
+        text-align: center
+    //-配合JS的打開開關
+    .open
+        display: block
 //-footer
 .copyright
     height: 10vh
@@ -106,3 +133,6 @@
 
 .footer
     z-index: -1
+//-配合JS的打開開關
+.open
+    display: block
