@@ -349,7 +349,7 @@
 #coffee-background a #fursuit-tea img {
   width: 25vw;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 0;
 }
@@ -364,7 +364,7 @@
 #coffee-background a #husky-restaurant img {
   width: 25vw;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 0;
 }
