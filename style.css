@@ -5,9 +5,10 @@
 }
 
 .background {
+  position: absolute;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: -1;
   background-color: #69807791;
 }
 
@@ -260,5 +261,111 @@
 
 #area-background a:hover .area span {
   text-align: center;
+}
+
+.active-area {
+  width: 80vw;
+  height: 40vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-inner div a img {
+  height: 40vh;
+  width: 80vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.carousel-inner div a div h5 {
+  color: rgba(22, 202, 22, 0.993);
+  font-weight: 20px;
+}
+
+.carousel-inner div a div p {
+  color: rgba(22, 202, 22, 0.993);
+  font-weight: 20px;
+}
+
+#feeding-area {
+  height: 50vh;
+  padding-top: 10vh;
+}
+
+#coffee-background {
+  width: 80vw;
+  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 10vh;
+  margin: 0 auto;
+}
+
+#coffee-background a div {
+  height: 80vh;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  vertical-align: center;
+  text-align: center;
+  width: 25vw;
+}
+
+#coffee-background a div h2 {
+  color: #f7d200;
+  position: relative;
+  display: inline-block;
+  vertical-align: center;
+  text-align: center;
+  margin-left: 10vw;
+  z-index: 1;
+}
+
+#coffee-background a #cat-coffee {
+  background-image: url(../image/coffee-inner-banner.png);
+  position: relative;
+  z-index: -1;
+  opacity: 1;
+}
+
+#coffee-background a #cat-coffee img {
+  width: 25vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#coffee-background a #fursuit-tea {
+  background-image: url(../image/teashop-inner-banner.png);
+  position: relative;
+  z-index: -1;
+  opacity: 1;
+}
+
+#coffee-background a #fursuit-tea img {
+  width: 25vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#coffee-background a #husky-restaurant {
+  background-image: url(../image/restaurant-inner-banner.png);
+  position: relative;
+  z-index: -1;
+  opacity: 1;
+}
+
+#coffee-background a #husky-restaurant img {
+  width: 25vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 /*# sourceMappingURL=style.css.map */

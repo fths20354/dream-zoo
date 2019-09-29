@@ -9,9 +9,10 @@
 //     width: 100vw
 //-背景底色
 .background
+    position: absolute
     height: 100vh
     width: 100vw
-    z-index: 1
+    z-index: -1
     background-color: #69807791
 //-標題
 .logo
@@ -177,3 +178,84 @@
             span
                 text-align: center
             grid-template-columns: 1fr
+//-互動園區
+.active-area
+    width: 80vw
+    height: 40vh
+    overflow: hidden
+    margin: 0 auto
+.carousel-inner
+    div
+        a
+            img
+                height: 40vh
+                width: 80vw
+                object-fit: cover
+                z-index: -1
+            div
+                h5
+                    color: rgba(22, 202, 22, 0.993)
+                    font-weight: 20px
+                p
+                    color: rgba(22, 202, 22, 0.993)
+                    font-weight: 20px
+#feeding-area
+    height: 50vh
+    padding-top: 10vh
+
+//-主題餐廳
+#coffee-background
+    width: 80vw
+    height: 80vh
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    padding-top: 10vh
+    margin: 0 auto
+    a
+        div
+            height: 80vh
+            writing-mode: vertical-lr
+            vertical-align: center
+            text-align: center
+            width: 25vw
+            h2
+                color: #f7d200
+                position: relative
+                display: inline-block
+                vertical-align: center
+                text-align: center
+                margin-left: 10vw
+                z-index: 1
+        #cat-coffee
+            background-image: url(../image/coffee-inner-banner.png)
+            position: relative
+            z-index: -1
+            opacity: 1
+            img
+                width: 25vw
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 0
+        #fursuit-tea
+            background-image: url(../image/teashop-inner-banner.png)
+            position: relative
+            z-index: -1
+            opacity: 1
+            img
+                width: 25vw
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 0
+        #husky-restaurant
+            background-image: url(../image/restaurant-inner-banner.png)
+            position: relative
+            z-index: -1
+            opacity: 1
+            img
+                width: 25vw
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 0
