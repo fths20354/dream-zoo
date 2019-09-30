@@ -9,8 +9,6 @@
 //     width: 100vw
 //-背景底色
 .background
-    position: fixed
-    height: 100vh
     width: 100vw
     z-index: -1
     background-color: #69807791
@@ -21,16 +19,20 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr
     height: 10vh
     width: 100vw
-    background-color: rgba(170, 78, 3, 0.644)
+    background-color: #c48048
+    z-index: 1
     a
         width: 100vw
         display: grid
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+        z-index: 1
         div
             margin: auto
+            z-index: 1
             h1
             text-align: justify
             text-justify: inter-ideograph
+            z-index: 1
 //-熱氣球導覽列
 .nav-bg
     position: fixed
@@ -75,30 +77,93 @@
     //-配合JS的打開開關
     .open
         display: block
+//-導覽列的RWD
+@media screen and ( max-width: 1023px )
+    .nav-bg
+        width: 20vw
+        .nav
+            width: 20vw
+            img
+                width: 20vw
+                height: 24vw
+        .nav-list
+            width: 20vw
 //-首頁區域的點選圖片大小
 #door
-    
     padding-top: 15vh
     display: grid
     grid-template-columns: 1fr 1fr
     div
+        height: 20vh
         margin-bottom: 5vh
         display: inline-block
         width: 30vw
         a
-            margin-left: 10vw
-            img
-                height: 20vh
-                object-fit: contain
+            text-align: center
+            margin-left: 5vw
+            div
+                padding-top: 5vh
+                span
+                    background-color: rgba(151, 183, 226, 0.308)
+                    box-shadow: 0 0 10px rgba(151, 183, 226, 0.308)
+                    font-size: 3em
+                    color: #1145ee
+        a:hover
+            div
+                opacity: 1
 .event-block
-    margin-left: 10vw
+    margin-left: 30vw
+.animal-block-background
+    background-image: url(../image/animals-banner.png)
+    background-size: cover
+    opacity: 0.6
+.active-block-background
+    background-image: url(../image/farm-banner.png)
+    background-size: cover
+    opacity: 0.6
+.coffee-block-background
+    background-image: url(../image/coffee-banner.png)
+    background-size: cover
+    opacity: 0.6
+.present-block-background
+    background-image: url(../image/souvenir-banner.png)
+    background-size: cover
+    opacity: 0.6
+.event-block-background
+    background-image: url(../image/circus2-banner.png)
+    background-size: cover
+    opacity: 0.6
+//-首頁的RWD
+@media screen and ( max-width: 1023px )
+    #door
+        display: inline-block
+        padding-top: 10vh
+        div
+            left: 0
+            width: 100vw
+            height: 20vh
+            a
+                margin-left: 0
+                text-align: center
+                vertical-align: top
+                span
+                    font-size: 3em
+                    color: #1c7ecf
+                    display: inline-block
+                    z-index: 0
+    .event-block
+        margin-left: 0
+        padding-bottom: 10vh
+
+    
+    
 //-里程告示牌
 .leading
-    width: 28vh
+    width: 28vw
     position: fixed
     bottom: 0
     left: 0
-    z-index: 0
+    z-index: 1
     .leading-img
         img
             height: 35vh
@@ -112,6 +177,14 @@
     //-配合JS的打開開關
     .open
         display: block
+//-告示牌的RWD
+@media screen and ( max-width: 1023px )
+    .leading
+        width: 28vw
+        .leading-img
+            img
+                height: 35vw
+                width: 28vw
 //-footer
 .copyright
     height: 10vh
@@ -130,11 +203,11 @@
     .copyright-img
         bottom: 0
         position: absolute
-        z-index: -1
+        z-index: 0
         img
             height: 10vh
             width: 100vw
-            opacity: 0.5
+            opacity: 1
 //-各區域區塊背景圖
 #polar
     background-image: url(../image/polarbackground-block.jpg)
@@ -173,11 +246,32 @@
                 color: rgb(228, 96, 8)
     a:hover
         .area
+            grid-template-columns: 1fr
             img
                 display: none
             span
                 text-align: center
-            grid-template-columns: 1fr
+                margin: auto
+//-觀賞園區的RWD
+@media screen and ( max-width: 1023px )
+    #area-background
+        a
+            div
+                img
+                    height: 16vh
+                    margin: 0 0 0 0
+                span
+                    font-size: 3em
+                    margin: 0 0 0 3vw
+        a:hover
+            .area
+                grid-template-columns: 1fr
+                img
+                    display: none
+                span
+                    text-align: center
+                    margin: auto
+    
 //-互動園區
 .active-area
     width: 80vw
@@ -202,6 +296,11 @@
 #feeding-area
     height: 50vh
     padding-top: 10vh
+@media screen and ( max-width: 1023px )
+    h5
+        display: inline-block
+        opacity: 1
+    
 
 //-主題餐廳
 #coffee-background

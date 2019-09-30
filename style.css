@@ -5,8 +5,6 @@
 }
 
 .background {
-  position: fixed;
-  height: 100vh;
   width: 100vw;
   z-index: -1;
   background-color: #69807791;
@@ -20,7 +18,8 @@
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   height: 10vh;
   width: 100vw;
-  background-color: rgba(170, 78, 3, 0.644);
+  background-color: #c48048;
+  z-index: 1;
 }
 
 .logo a {
@@ -29,12 +28,15 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  z-index: 1;
 }
 
 .logo a div {
   margin: auto;
+  z-index: 1;
   text-align: justify;
   text-justify: inter-ideograph;
+  z-index: 1;
 }
 
 .nav-bg {
@@ -104,6 +106,22 @@
   display: block;
 }
 
+@media screen and (max-width: 1023px) {
+  .nav-bg {
+    width: 20vw;
+  }
+  .nav-bg .nav {
+    width: 20vw;
+  }
+  .nav-bg .nav img {
+    width: 20vw;
+    height: 24vw;
+  }
+  .nav-bg .nav-list {
+    width: 20vw;
+  }
+}
+
 #door {
   padding-top: 15vh;
   display: -ms-grid;
@@ -113,31 +131,100 @@
 }
 
 #door div {
+  height: 20vh;
   margin-bottom: 5vh;
   display: inline-block;
   width: 30vw;
 }
 
 #door div a {
-  margin-left: 10vw;
+  text-align: center;
+  margin-left: 5vw;
 }
 
-#door div a img {
-  height: 20vh;
-  -o-object-fit: contain;
-     object-fit: contain;
+#door div a div {
+  padding-top: 5vh;
+}
+
+#door div a div span {
+  background-color: rgba(151, 183, 226, 0.308);
+  -webkit-box-shadow: 0 0 10px rgba(151, 183, 226, 0.308);
+          box-shadow: 0 0 10px rgba(151, 183, 226, 0.308);
+  font-size: 3em;
+  color: #1145ee;
+}
+
+#door div a:hover div {
+  opacity: 1;
 }
 
 .event-block {
-  margin-left: 10vw;
+  margin-left: 30vw;
+}
+
+.animal-block-background {
+  background-image: url(../image/animals-banner.png);
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.active-block-background {
+  background-image: url(../image/farm-banner.png);
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.coffee-block-background {
+  background-image: url(../image/coffee-banner.png);
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.present-block-background {
+  background-image: url(../image/souvenir-banner.png);
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.event-block-background {
+  background-image: url(../image/circus2-banner.png);
+  background-size: cover;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1023px) {
+  #door {
+    display: inline-block;
+    padding-top: 10vh;
+  }
+  #door div {
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+  }
+  #door div a {
+    margin-left: 0;
+    text-align: center;
+    vertical-align: top;
+  }
+  #door div a span {
+    font-size: 3em;
+    color: #1c7ecf;
+    display: inline-block;
+    z-index: 0;
+  }
+  .event-block {
+    margin-left: 0;
+    padding-bottom: 10vh;
+  }
 }
 
 .leading {
-  width: 28vh;
+  width: 28vw;
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 0;
+  z-index: 1;
 }
 
 .leading .leading-img img {
@@ -158,6 +245,16 @@
 
 .leading .open {
   display: block;
+}
+
+@media screen and (max-width: 1023px) {
+  .leading {
+    width: 28vw;
+  }
+  .leading .leading-img img {
+    height: 35vw;
+    width: 28vw;
+  }
 }
 
 .copyright {
@@ -182,13 +279,13 @@
 .copyright .copyright-img {
   bottom: 0;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
 }
 
 .copyright .copyright-img img {
   height: 10vh;
   width: 100vw;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #polar {
@@ -261,6 +358,29 @@
 
 #area-background a:hover .area span {
   text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  #area-background a div img {
+    height: 16vh;
+    margin: 0 0 0 0;
+  }
+  #area-background a div span {
+    font-size: 3em;
+    margin: 0 0 0 3vw;
+  }
+  #area-background a:hover .area {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #area-background a:hover .area img {
+    display: none;
+  }
+  #area-background a:hover .area span {
+    text-align: center;
+    margin: auto;
+  }
 }
 
 .active-area {
@@ -291,6 +411,13 @@
 #feeding-area {
   height: 50vh;
   padding-top: 10vh;
+}
+
+@media screen and (max-width: 1023px) {
+  h5 {
+    display: inline-block;
+    opacity: 1;
+  }
 }
 
 #coffee-background {

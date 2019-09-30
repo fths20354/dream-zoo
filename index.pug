@@ -1,8 +1,9 @@
 //-各區域的MIXIN 分別可以直接設定類別名稱，連結檔案位址，圖片位置，快搜敘述
-mixin areablock(classname, areaposition, imgposition, altdiscription)
+mixin areablock(classname, areaposition, bgidiv, areaname)
     div(class="" + classname + "")
         a(href="" + areaposition + "")
-            img(src="" + imgposition + "", alt="" + altdiscription + "")
+            div(class="" + bgidiv + "")
+                span=areaname
 
 
 
@@ -28,15 +29,15 @@ html(lang="zh")
             //-門框
             div(id="door")
                 //-觀賞園區
-                +areablock("animal-block", "animalpark/animal-park.html", "image/animals.png", "觀賞園區")
+                +areablock("animal-block", "animalpark/animal-park.html", "animal-block-background", "觀賞園區")
                 //-互動園區
-                +areablock("active-block", "activepark/active-park.html", "image/farm.png", "互動園區")
+                +areablock("active-block", "activepark/active-park.html","active-block-background", "互動園區")
                 //-主題咖啡廳
-                +areablock("coffee-block", "coffee/coffee.html", "image/coffee.png", "主題咖啡廳")
+                +areablock("coffee-block", "coffee/coffee.html","coffee-block-background", "主題餐廳")
                 //-精品禮品店
-                +areablock("present-block", "present/present.html", "image/souvenir.png", "精品禮品店")
+                +areablock("present-block", "present/present.html","present-block-background", "禮品精品店")
                 //-活動展覽
-                +areablock("event-block", "event/event.html", "image/circus2.png", "活動展覽")
+                +areablock("event-block", "event/event.html","event-block-background", "活動展覽")
             include leading.pug
             //-地面-版權聲明
             include footer.pug
