@@ -5,7 +5,7 @@
 }
 
 .background {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   z-index: -1;
@@ -270,7 +270,7 @@
   margin: 0 auto;
 }
 
-.carousel-inner div a img {
+.active-par-img-block div a img {
   height: 40vh;
   width: 80vw;
   -o-object-fit: cover;
@@ -278,12 +278,12 @@
   z-index: -1;
 }
 
-.carousel-inner div a div h5 {
+.active-par-img-block div a div h5 {
   color: rgba(22, 202, 22, 0.993);
   font-weight: 20px;
 }
 
-.carousel-inner div a div p {
+.active-par-img-block div a div p {
   color: rgba(22, 202, 22, 0.993);
   font-weight: 20px;
 }
@@ -367,5 +367,62 @@
   bottom: 0;
   left: 0;
   z-index: 0;
+}
+
+#event-background {
+  width: 100vw;
+  height: 80vh;
+  top: 10vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  z-index: -1;
+  vertical-align: center;
+}
+
+.event-area {
+  height: 80vh;
+  width: 40vw;
+  top: 10vh;
+}
+
+.event-block {
+  height: 80vh;
+  width: 40vw;
+  top: 10vh;
+  right: 5vw;
+}
+
+.furevent-img img {
+  height: 80vh;
+  width: 40vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.furevent-img div h5, .furevent-img div p {
+  color: #13c9e9;
+}
+
+.circus-img img {
+  height: 80vh;
+  width: 40vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.circus-img div h5, .circus-img div p {
+  color: #13c9e9;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  height: 10vh;
+  top: 45vh;
+}
+
+.banner-content {
+  bottom: 20vh;
 }
 /*# sourceMappingURL=style.css.map */
