@@ -1,3 +1,28 @@
+//-各個區塊的排列，左圖右文
+mixin left-block(imgaddress, texttitle, textcontent)
+    div(class="background-block")
+        div(class="left-img")
+            img(src="" + imgaddress + "", alt="")
+        div(class="left-text")
+            h2=texttitle
+            p=textcontent
+
+
+mixin right-block(imgaddress2, texttitle2, textcontent2)
+    div(class="background-block")
+        div(class="right-img")
+            img(src="" + imgaddress2 + "", alt="")
+        div(class="right-text")
+            h2=texttitle2
+            p=textcontent2
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 html(lang="zh")
     head
