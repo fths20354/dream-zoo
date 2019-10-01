@@ -164,31 +164,31 @@
 }
 
 .animal-block-background {
-  background-image: url(../image/animals-banner.png);
+  background-image: url(./image/animals-banner.png);
   background-size: cover;
   opacity: 0.6;
 }
 
 .active-block-background {
-  background-image: url(../image/farm-banner.png);
+  background-image: url(./image/farm-banner.png);
   background-size: cover;
   opacity: 0.6;
 }
 
 .coffee-block-background {
-  background-image: url(../image/coffee-banner.png);
+  background-image: url(./image/coffee-banner.png);
   background-size: cover;
   opacity: 0.6;
 }
 
 .present-block-background {
-  background-image: url(../image/souvenir-banner.png);
+  background-image: url(./image/souvenir-banner.png);
   background-size: cover;
   opacity: 0.6;
 }
 
 .event-block-background {
-  background-image: url(../image/circus2-banner.png);
+  background-image: url(./image/circus2-banner.png);
   background-size: cover;
   opacity: 0.6;
 }
@@ -294,27 +294,27 @@
 }
 
 #polar {
-  background-image: url(../image/polarbackground-block.jpg);
+  background-image: url(./image/polarbackground-block.jpg);
   opacity: 0.5;
 }
 
 #savana {
-  background-image: url(../image/savanabackground-block.png);
+  background-image: url(./image/savanabackground-block.png);
   opacity: 0.5;
 }
 
 #forest {
-  background-image: url(../image/forestbackground-block.png);
+  background-image: url(./image/forestbackground-block.png);
   opacity: 0.5;
 }
 
 #mountain {
-  background-image: url(../image/mountainbackground-block.png);
+  background-image: url(./image/mountainbackground-block.png);
   opacity: 0.5;
 }
 
 #ocean {
-  background-image: url(../image/oceanbackground-block.png);
+  background-image: url(./image/oceanbackground-block.png);
   opacity: 0.5;
 }
 
@@ -451,7 +451,7 @@
 }
 
 #coffee-background a #cat-coffee {
-  background-image: url(../image/coffee-inner-banner.png);
+  background-image: url(./image/coffee-inner-banner.png);
   position: relative;
   z-index: -1;
   opacity: 1;
@@ -466,7 +466,7 @@
 }
 
 #coffee-background a #fursuit-tea {
-  background-image: url(../image/teashop-inner-banner.png);
+  background-image: url(./image/teashop-inner-banner.png);
   position: relative;
   z-index: -1;
   opacity: 1;
@@ -481,7 +481,7 @@
 }
 
 #coffee-background a #husky-restaurant {
-  background-image: url(../image/restaurant-inner-banner.png);
+  background-image: url(./image/restaurant-inner-banner.png);
   position: relative;
   z-index: -1;
   opacity: 1;
@@ -497,7 +497,7 @@
 
 #event-background {
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   top: 10vh;
   display: -ms-grid;
   display: grid;
@@ -513,7 +513,8 @@
   top: 10vh;
 }
 
-.event-block {
+.event-block2 {
+  left: 5vw;
   height: 80vh;
   width: 40vw;
   top: 10vh;
