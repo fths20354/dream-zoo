@@ -316,6 +316,7 @@
     height: 40vh
     margin-top: 10vh
     margin-right: 10vw
+    z-index: 0
     .feeding-area-next-bt
         height: 10vh
 .riding-carousel-control-prev
@@ -360,36 +361,42 @@
         #cat-coffee
             background-image: url(./image/coffee-inner-banner.png)
             position: relative
-            z-index: -1
-            opacity: 1
+            z-index: 0
+            opacity: 0.5
             img
                 width: 25vw
                 position: absolute
                 top: 0
                 left: 0
                 z-index: 0
+        #cat-coffee:hover
+            opacity: 1
         #fursuit-tea
             background-image: url(./image/teashop-inner-banner.png)
             position: relative
-            z-index: -1
-            opacity: 1
+            z-index: 0
+            opacity: 0.5
             img
                 width: 25vw
                 position: absolute
                 bottom: 0
                 left: 0
                 z-index: 0
+        #fursuit-tea:hover
+            opacity: 1
         #husky-restaurant
             background-image: url(./image/restaurant-inner-banner.png)
             position: relative
-            z-index: -1
-            opacity: 1
+            z-index: 0
+            opacity: 0.5
             img
                 width: 25vw
                 position: absolute
                 bottom: 0
                 left: 0
                 z-index: 0
+        #husky-restaurant:hover
+            opacity: 1
 //-活動展覽
 #event-background
     width: 100vw
@@ -445,6 +452,7 @@
 .circus-carousel-control-next
     right: 5vw
     width: 10vw
+    z-index: 0
     .circusevent-next-bt
     
     
@@ -453,3 +461,8 @@
     top: 45vh
 .banner-content
     bottom: 20vh
+@media screen and ( max-width: 1023px )
+    h5
+        display: inline-block
+        color: #e498dd
+    
