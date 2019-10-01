@@ -225,11 +225,16 @@
 }
 
 .leading {
-  width: 28vw;
+  width: 28vh;
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 1;
+}
+
+.leading .leading-img {
+  height: 35vh;
+  width: 28vh;
 }
 
 .leading .leading-img img {
@@ -241,6 +246,7 @@
 
 .leading .leading-list {
   display: none;
+  width: 28vh;
   text-align: center;
 }
 
@@ -254,6 +260,10 @@
 
 @media screen and (max-width: 1023px) {
   .leading {
+    width: 28vw;
+  }
+  .leading .leading-img {
+    height: 35vw;
     width: 28vw;
   }
   .leading .leading-img img {
@@ -418,6 +428,46 @@
   padding-top: 10vh;
 }
 
+.feeding-carousel-control-prev {
+  height: 40vh;
+  margin-top: 10vh;
+  margin-left: 10vw;
+}
+
+.feeding-carousel-control-prev .feeding-area-prev-bt {
+  height: 10vh;
+}
+
+.feeding-carousel-control-next {
+  height: 40vh;
+  margin-top: 10vh;
+  margin-right: 10vw;
+}
+
+.feeding-carousel-control-next .feeding-area-next-bt {
+  height: 10vh;
+}
+
+.riding-carousel-control-prev {
+  height: 40vh;
+  margin-top: 50vh;
+  margin-left: 10vw;
+}
+
+.riding-carousel-control-prev .riding-area-prev-bt {
+  height: 10vh;
+}
+
+.riding-carousel-control-next {
+  height: 40vh;
+  margin-top: 50vh;
+  margin-right: 10vw;
+}
+
+.riding-carousel-control-next .riding-area-next-bt {
+  height: 10vh;
+}
+
 #coffee-background {
   width: 80vw;
   height: 90vh;
@@ -543,7 +593,27 @@
   color: #13c9e9;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.furevent-carousel-control-prev {
+  left: 5vw;
+  width: 10vw;
+}
+
+.furevent-carousel-control-next {
+  right: 55vw;
+  width: 10vw;
+}
+
+.circus-carousel-control-prev {
+  left: 55vw;
+  width: 10vw;
+}
+
+.circus-carousel-control-next {
+  right: 5vw;
+  width: 10vw;
+}
+
+.furevent-prev-bt, .furevent-next-bt, .circusevent-prev-bt, .circusevent-next-bt {
   height: 10vh;
   top: 45vh;
 }

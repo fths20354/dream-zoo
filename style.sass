@@ -164,18 +164,21 @@
     
 //-里程告示牌
 .leading
-    width: 28vw
+    width: 28vh
     position: fixed
     bottom: 0
     left: 0
     z-index: 1
     .leading-img
+        height: 35vh
+        width: 28vh
         img
             height: 35vh
             width: 28vh
             object-fit: contain
     .leading-list
         display: none
+        width: 28vh
         text-align: center
         a
             color: yellow
@@ -187,6 +190,8 @@
     .leading
         width: 28vw
         .leading-img
+            height: 35vw
+            width: 28vw
             img
                 height: 35vw
                 width: 28vw
@@ -301,6 +306,32 @@
 #feeding-area
     height: 50vh
     padding-top: 10vh
+.feeding-carousel-control-prev
+    height: 40vh
+    margin-top: 10vh
+    margin-left: 10vw
+    .feeding-area-prev-bt
+        height: 10vh
+.feeding-carousel-control-next
+    height: 40vh
+    margin-top: 10vh
+    margin-right: 10vw
+    .feeding-area-next-bt
+        height: 10vh
+.riding-carousel-control-prev
+    height: 40vh
+    margin-top: 50vh
+    margin-left: 10vw
+    .riding-area-prev-bt
+        height: 10vh
+.riding-carousel-control-next
+    height: 40vh
+    margin-top: 50vh
+    margin-right: 10vw
+    .riding-area-next-bt
+        height: 10vh
+
+
 
 
 //-主題餐廳
@@ -395,8 +426,29 @@
     div
         h5, p
             color: rgb(19, 201, 233)
-.event-img-block
-.carousel-control-prev, .carousel-control-next
+
+.furevent-carousel-control-prev
+    left: 5vw
+    width: 10vw
+    .furevent-prev-bt
+
+.furevent-carousel-control-next
+    right: 55vw
+    width: 10vw
+    .furevent-next-bt
+
+.circus-carousel-control-prev
+    left: 55vw
+    width: 10vw
+    .circusevent-prev-bt
+
+.circus-carousel-control-next
+    right: 5vw
+    width: 10vw
+    .circusevent-next-bt
+    
+    
+.furevent-prev-bt, .furevent-next-bt, .circusevent-prev-bt, .circusevent-next-bt
     height: 10vh
     top: 45vh
 .banner-content
