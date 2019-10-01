@@ -395,21 +395,20 @@
   margin: 0 auto;
 }
 
-.active-par-img-block div a img {
+.active-park-img-block div a img {
   height: 40vh;
-  width: 80vw;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
 }
 
-.active-par-img-block div a div h5 {
+.active-park-img-block div a div h5 {
   color: rgba(22, 202, 22, 0.993);
   font-weight: 20px;
   top: 10vh;
 }
 
-.active-par-img-block div a div p {
+.active-park-img-block div a div p {
   color: rgba(22, 202, 22, 0.993);
   font-weight: 20px;
 }
