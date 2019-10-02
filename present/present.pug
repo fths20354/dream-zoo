@@ -1,3 +1,13 @@
+//-各個區塊的排列，左圖右文
+mixin left-block(imgaddress, texttitle, textcontent)
+    div(class="background-block")
+        div(class="left-img")
+            img(src="" + imgaddress + "", alt="")
+        div(class="left-text")
+            h2=texttitle
+            p=textcontent
+
+
 <!DOCTYPE html>
 html(lang="zh")
     head
@@ -13,21 +23,10 @@ html(lang="zh")
             include ../logo2.pug
             include ../nav2.pug
             include ../door.pug
-            div(id="present-backgroun")
-                div(class="floor")
-                    div(class="floor-img")
-                        img(src="", alt="")
-                    div(class="floor-content")
-                        h3
-                        hr
-                        p
-                div(class="floor")
-                    div(class="floor-img")
-                        img(src="", alt="")
-                    div(class="floor-content")
-                        h3
-                        hr
-                        p
+            div(class="present-space")
+            +left-block("../image/present-reality.png", "1F-三次元現實區", "在一樓的區域內，所有的周邊都是寫實類的，如果喜歡的是現實的動物的話，可以在一樓逛逛喔~")
+            +left-block("../image/present-anime.jpg", "2F-二次元動漫區", "在禮品店的二樓，所有東西都是動漫相關的喔~，主打的更是動漫內的各類動物角色~，各位宅男宅女都可以來挑選自己喜歡的禮物唷~")
+
 
 
 

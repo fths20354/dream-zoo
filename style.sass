@@ -8,11 +8,10 @@
 //     height: 100vh
 //     width: 100vw
 //-背景底色
-.background
-    height: 100vh
-    width: 100vw
-    z-index: -1
-    background-color: #69807791
+body
+    background: rgb(251,220,63)
+    background: radial-gradient(circle, rgba(251,220,63,1) 0%, rgba(212,97,26,1) 100%)
+    background-attachment: fixed
 //-標題
 .logo
     display: grid
@@ -20,7 +19,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr
     height: 10vh
     width: 100vw
-    background-color: #c48048
+    background: rgb(195,142,34)
+    background: linear-gradient(0deg, rgba(195,142,34,1) 0%, rgba(253,45,45,1) 100%)
     z-index: 1
     a
         width: 100vw
@@ -33,6 +33,7 @@
             h1
             text-align: justify
             text-justify: inter-ideograph
+            text-shadow: 0 0 20px #1d8dd8ef
             z-index: 1
 //-熱氣球導覽列
 .nav-bg
@@ -55,6 +56,7 @@
         a
             span
                 color: yellow
+                text-shadow: 0 0 20px #121caa
     //-配合JS的打開開關
     .open
         display: block
@@ -106,8 +108,8 @@
                 padding-top: 5vh
                 span
                     background-color: rgba(151, 183, 226, 0.308)
-                    box-shadow: 0 0 10px rgba(151, 183, 226, 0.308)
                     font-size: 3em
+                    text-shadow: 0 0 20px #ffffffc0
                     color: #1145ee
         a:hover
             div
@@ -182,6 +184,7 @@
         text-align: center
         a
             color: yellow
+            text-shadow: 0 0 10px #00887a
     //-配合JS的打開開關
     .open
         display: block
@@ -249,6 +252,7 @@
             span
                 font-size: 3em
                 margin: 0 0 0 15vw
+                text-shadow: 0 0 20px #ffffff
         .area
             display: grid
             grid-template-columns: 1fr 1fr
@@ -264,6 +268,8 @@
             span
                 text-align: center
                 margin: auto
+        #polar, #savana, #forest, #mountain, #ocean
+            opacity: 1
 //-觀賞園區的RWD
 @media screen and ( max-width: 1023px )
     #area-background
@@ -305,6 +311,7 @@
                 p
                     color: rgba(22, 202, 22, 0.993)
                     font-weight: 20px
+                    text-shadow: 0 0 20px #ffffff
 #feeding-area
     height: 50vh
     padding-top: 10vh
@@ -354,6 +361,7 @@
             width: 25vw
             h2
                 color: #f7d200
+                text-shadow: 0 0 20px #e7da5fd8
                 position: relative
                 display: inline-block
                 vertical-align: center
@@ -399,6 +407,10 @@
                 z-index: 0
         #husky-restaurant:hover
             opacity: 1
+//-精品禮品店
+.present-space
+    height: 10vh
+    width: 100vw
 //-活動展覽
 #event-background
     width: 100vw
@@ -426,6 +438,7 @@
     div
         h5, p
             color: rgb(19, 201, 233)
+            text-shadow: 0 0 20px rgba(6, 2, 63, 0.815)
 .circus-img
     img
         height: 80vh
@@ -435,6 +448,7 @@
     div
         h5, p
             color: rgb(19, 201, 233)
+            text-shadow: 0 0 20px rgba(6, 2, 63, 0.815)
 
 .furevent-carousel-control-prev
     left: 5vw
@@ -466,7 +480,16 @@
     z-index: 0
     h5, p
         z-index: 0
-    
+//-關於本園
+.about-content
+    text-align: center
+    vertical-align: center
+    padding-top: 20vh
+    width: 80vw
+    margin-left: 10vw
+    p
+        font-size: 1.5em
+        text-shadow: 0 0 20px #cf2323bd
 
 //-從下面起是最小子分頁
 .breadcrumb
@@ -475,7 +498,7 @@
     background-color: #44c01ec0
     li
         line-height: 5vh
-.backgroung-block
+.background-block
     height: 40vh
     width: 80vw
     display: grid
@@ -504,28 +527,53 @@
         margin-top: 5vh
     p
         margin-top: 5vh
+
 @media screen and ( max-width: 1023px )
-    .backgroung-block
-        height: 40vh
+    .background-block
+        height: 80vh 
         width: 80vw
-        display: grid
-        grid-template-columns: 1fr
+        display: block
         text-align: center
         margin-top: 5vh
-    .left-img
-        display: block
-        width: 80vw
-        img
+        .left-img
+            display: block
+            position: relative
+            height: 40vh
             width: 80vw
-    .left-text
-        display: blcok
-        width: 80vw
-    .right-img
-        display: block
-        width: 80vw
-        img
+            img
+                position: relative
+                height: 40vh
+                width: 80vw
+        .left-text
+            position: relative !important
+            height: 40vh
+            display: inline-blcok
             width: 80vw
-    .right-text
-        display: block
-        width: 80vw
-    
+            h2
+                margin-top: 0
+            p
+                margin-top: 0
+//-聯絡我們
+.table-block
+    height: 60vh
+    width: 80vw
+    padding-top: 20vh
+    margin-left: 10vw
+    text-align: center
+    span
+        color: #8f1010e3
+        text-shadow: 0 0 20px #2d7c22d7
+        font-size: 2em
+#advice
+    margin-top: 5vh
+    width: 60vw
+    height: 40vh
+    text-align: center
+    word-wrap: break-word
+#submit-bt
+    margin-top: 5vh
+    font-size: 2em
+    background-color: #8a4117d0
+    border-radius: 40%
+    color: #153f75
+    text-shadow: 0 0 20px #19acd8

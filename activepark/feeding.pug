@@ -8,15 +8,6 @@ mixin left-block(imgaddress, texttitle, textcontent)
             p=textcontent
 
 
-mixin right-block(texttitle2, textcontent2, imgaddress2)
-    div(class="background-block")
-        div(class="right-text")
-            h2=texttitle2
-            p=textcontent2
-        div(class="right-img")
-            img(src="" + imgaddress2 + "", alt="")
-
-
 
 
 
@@ -34,17 +25,17 @@ html(lang="zh")
         link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
         link(rel="stylesheet", href="../style.css")
     body
-        div(class="background")
-            include ../logo2.pug
-            nav(aria-label="breadcrumb")
-                ol(class="breadcrumb")
-                    li(class="breadcrumb-item")
-                        a(href="../index.html") 首頁
-                    li(class="breadcrumb-item")
-                        a(href="active-park.html") 互動園區
-                    li(class="breadcrumb-item active" aria-current="page") 餵食區
-            +left-block("../image/cow.png", "乳牛", "乳牛從")
-            +right-block("綿羊", "綿羊", "../image/sheep.png")
+        include ../logo2.pug
+        nav(aria-label="breadcrumb")
+            ol(class="breadcrumb")
+                li(class="breadcrumb-item")
+                    a(href="../index.html") 首頁
+                li(class="breadcrumb-item")
+                    a(href="active-park.html") 互動園區
+                li(class="breadcrumb-item active" aria-current="page") 餵食區
+        +left-block("../image/feeding3.jpg", "牛", "牛是古時農家的好夥伴，已經馴養好的牛隻是很溫順的，但如果遇到野生的牛隻，千萬不要輕易地靠近他!")
+        +left-block("../image/feeding2.jpg", "綿羊", "綿羊是我們常聽到的牧場動物，其皮毛因品種與個體身體狀況的不同，其價值間有極大的差異，大眾認為綿羊是極為溫順的草食動物，但事實上，綿羊並沒有一般認知上那麼柔弱")
+        +left-block("../image/feeding1.jpg", "羊駝", "羊駝的餵食區，羊駝其實就是大家所熟悉的草泥馬，羊駝的皮毛屬於高價品，因此其價值頗高，但又因其屬跟駱駝是近親，有著讓飼養員比較尷尬的習性，那就是───吐口水")
 
 
 
@@ -55,13 +46,13 @@ html(lang="zh")
 
 
             
-        include ../footer2.pug
+    include ../footer2.pug
 
 
 
-        script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
-        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
-        script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
-        script(src="../js/java.js")
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+    script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
+    script(src="../js/java.js")
 
