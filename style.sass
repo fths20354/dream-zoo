@@ -481,20 +481,72 @@
     display: grid
     grid-template-columns: 1fr 1fr
     text-align: center
-    margin: 5vh auto 0 auto
+    margin-top: 5vh
 .left-img
     display: inline-block
     height: 40vh
     width: 35vw
     object-fit: contain
+    margin-left: 5vw
     img
         height: 40vh
         width: 35vw
         object-fit: contain
 .left-text
+    position: absolute
     display: inline-block
     height: 40vh
     width: 35vw
     text-align: center
     vertical-align: center
-
+    margin-left: 5vw
+    h2
+        margin-top: 5vh
+    p
+        margin-top: 5vh
+.right-img
+    display: inline-block
+    height: 40vh
+    width: 35vw
+    object-fit: contain
+    margin-left: 5vw
+    img
+        height: 40vh
+        width: 35vw
+        object-fit: contain
+.right-text
+    display: inline-block
+    height: 40vh
+    width: 35vw
+    text-align: center
+    vertical-align: center
+    margin-left: 5vw
+    h2
+        margin-top: 5vh
+    p
+        margin-top: 5vh
+@media screen and ( max-width: 1023px )
+    .backgroung-block
+        height: 40vh
+        width: 80vw
+        display: grid
+        grid-template-columns: 1fr
+        text-align: center
+        margin-top: 5vh
+    .left-img
+        display: block
+        width: 80vw
+        img
+            width: 80vw
+    .left-text
+        display: blcok
+        width: 80vw
+    .right-img
+        display: block
+        width: 80vw
+        img
+            width: 80vw
+    .right-text
+        display: block
+        width: 80vw
+    
