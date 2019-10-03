@@ -803,9 +803,16 @@ body {
   text-shadow: 0 0 20px #19acd8;
 }
 
+.advice-source {
+  font-size: 1.1em;
+  color: #ff3499d3;
+  text-shadow: 0 0 20px #3819c4d7;
+}
+
 @media screen and (max-width: 1023px) {
   .table-block {
     padding-top: 13vh;
+    width: 50vw;
   }
   .table-block span {
     font-size: 1.2em;
