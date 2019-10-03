@@ -665,13 +665,20 @@ body {
   text-align: center;
   vertical-align: center;
   padding-top: 20vh;
-  width: 80vw;
-  margin-left: 10vw;
+  width: 60vw;
+  margin-left: 20vw;
 }
 
 .about-content p {
   font-size: 1.5em;
   text-shadow: 0 0 20px #cf2323bd;
+}
+
+@media screen and (max-width: 1023px) {
+  .about-content {
+    width: 80vw;
+    margin-left: 10vw;
+  }
 }
 
 .breadcrumb {
@@ -763,9 +770,9 @@ body {
 
 .table-block {
   height: 60vh;
-  width: 80vw;
+  width: 60vw;
   padding-top: 20vh;
-  margin-left: 10vw;
+  margin-left: 20vw;
   text-align: center;
 }
 
@@ -776,11 +783,15 @@ body {
 }
 
 #advice {
-  margin-top: 5vh;
+  margin-top: 0;
   width: 60vw;
   height: 40vh;
   text-align: center;
   word-wrap: break-word;
+}
+
+#mail-address {
+  width: 40vw;
 }
 
 #submit-bt {
@@ -790,5 +801,21 @@ body {
   border-radius: 40%;
   color: #153f75;
   text-shadow: 0 0 20px #19acd8;
+}
+
+@media screen and (max-width: 1023px) {
+  .table-block {
+    padding-top: 13vh;
+  }
+  .table-block span {
+    font-size: 1.2em;
+  }
+  #mail-address {
+    width: 30vw;
+  }
+  #advice {
+    width: 40vw;
+    height: 35vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

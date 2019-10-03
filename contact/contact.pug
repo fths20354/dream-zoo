@@ -13,11 +13,21 @@ html(lang="zh")
             include ../logo2.pug
             include ../nav2.pug
             div(class="table-block")
-                span 對本園的建議：
-                br
-                textarea(id="advice" cols="60", rows="80")
-                br
-                input(id="submit-bt" type="submit" value="確認送出")
+                span 如果您對於本園的構想有任何意見或建議，都可以寫信跟我說，我會再加以改進 w
+                form(mehtod="post" action="mailto:up6xu6m4cj3@gmail.com" enctype="text")
+                    label 諫言者信箱：
+                    br
+                    input(id="mail-address" type="text" name="email" size="25" maxlength="70")
+                    br
+                    label 對本園有什麼樣的建議事項：
+                    br
+                    textarea(id="advice" name="coment" cols="30" rows="10")
+                    br
+                    input(type="reset", value="清除重寫")
+                    input(type="submit", value="確認傳送")
+
+                    
+
 
 
 

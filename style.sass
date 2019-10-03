@@ -561,20 +561,22 @@ body
 //-聯絡我們
 .table-block
     height: 60vh
-    width: 80vw
+    width: 60vw
     padding-top: 20vh
-    margin-left: 10vw
+    margin-left: 20vw
     text-align: center
     span
         color: #8f1010e3
         text-shadow: 0 0 20px #2d7c22d7
         font-size: 2em
 #advice
-    margin-top: 5vh
+    margin-top: 0
     width: 60vw
     height: 40vh
     text-align: center
     word-wrap: break-word
+#mail-address
+    width: 40vw
 #submit-bt
     margin-top: 5vh
     font-size: 2em
@@ -582,3 +584,14 @@ body
     border-radius: 40%
     color: #153f75
     text-shadow: 0 0 20px #19acd8
+@media screen and ( max-width: 1023px )
+    .table-block
+        padding-top: 13vh
+        span
+            font-size: 1.2em
+    #mail-address
+        width: 30vw
+    #advice
+        width: 40vw
+        height: 35vh
+    
