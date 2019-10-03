@@ -65,6 +65,12 @@ body {
   height: 30vh;
 }
 
+.nav-bg .nav img:hover {
+  height: 35vh;
+  width: 42vh;
+  padding-right: 10vh;
+}
+
 .nav-bg .nav-list {
   display: none;
   width: 25vh;
@@ -126,6 +132,20 @@ body {
   .nav-bg .nav img {
     width: 25vw;
     height: 30vw;
+  }
+  .nav-bg .nav img:hover {
+    width: 28vw !important;
+    height: 33.6vw !important;
+    padding-right: 0;
+  }
+  .nav-bg .nav img:hover .nav-bg {
+    width: 28vw !important;
+  }
+  .nav-bg .nav img:hover .nav-bg .nav {
+    width: 28vw !important;
+  }
+  .nav-bg .nav img:hover .nav-list {
+    width: 28vw !important;
   }
   .nav-bg .nav-list {
     width: 25vw;
@@ -252,6 +272,11 @@ body {
      object-fit: contain;
 }
 
+.leading .leading-img img:hover {
+  height: 42vh;
+  width: 35vh;
+}
+
 .leading .leading-list {
   display: none;
   width: 28vh;
@@ -278,6 +303,10 @@ body {
   .leading .leading-img img {
     height: 35vw;
     width: 28vw;
+  }
+  .leading .leading-img img:hover {
+    height: 42vw;
+    width: 35vw;
   }
   .leading .leading-list {
     width: 28vw;
